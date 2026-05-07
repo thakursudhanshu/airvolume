@@ -19,16 +19,42 @@ A desktop application that uses hand gesture recognition to control system volum
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Run: `python main.py`
+1. **Install Python 3.8 or higher**
+   - Download from [python.org](https://python.org)
+   - Make sure to check "Add Python to PATH" during installation
+
+2. **Clone or download the repository**
+   ```bash
+   git clone https://github.com/thakursudhanshu/airvolume.git
+   cd airvolume
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the application**
+   ```bash
+   python main.py
+   ```
 
 ## Usage
 
-1. Start the application
-2. Click "Start" to begin gesture detection
-3. Rotate your hand clockwise to increase volume, anticlockwise to decrease
-4. Use calibration and sensitivity controls as needed
+1. Launch the application
+2. Click "Start Detection" to begin gesture recognition
+3. Position your hand in front of the webcam
+4. Rotate your hand clockwise to increase volume, counterclockwise to decrease
+5. Use the sensitivity slider to adjust gesture responsiveness
+6. Click "Calibrate" if the gesture detection needs resetting
+7. Use "Mute" to toggle audio on/off
+
+## Troubleshooting
+
+- **Camera not accessible**: Ensure no other applications are using the webcam
+- **Volume control not working**: Pycaw requires Windows audio APIs (works on Windows 10/11)
+- **Import errors**: Make sure all dependencies are installed correctly
+- **Performance issues**: Close other resource-intensive applications
 
 ## Tech Stack
 
